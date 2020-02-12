@@ -1,0 +1,26 @@
+{
+  "name": "gallery-toggle",
+  "version": "1.0.0",
+  "description": "A little application that uses the for in loop, createElement, setAttribute, getElementById, and appendChild methods inside a named function to toggle between hiding and showing an image gallery!",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch styles/scss -o styles/css",
+    "clean": "rm -rf dist/ && mkdir dist/",
+    "build": "cp -R assets scripts styles dist/ && cp index.html dist/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interglobalmedia/gallery-toggle.git"
+  },
+  "author": "Maria D. Campbell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/interglobalmedia/gallery-toggle/issues"
+  },
+  "homepage": "https://github.com/interglobalmedia/gallery-toggle#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1"
+  }
+}
